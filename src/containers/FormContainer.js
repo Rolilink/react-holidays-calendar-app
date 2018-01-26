@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { fetchHolidays } from '../redux/actions';
 
 function getInitialState() {
   return {
@@ -8,7 +10,7 @@ function getInitialState() {
   };
 }
 
-export default class FormContainer extends Component {
+class FormContainer extends Component {
   constructor(props) {
     super(props);
     this.state = getInitialState();
@@ -46,3 +48,9 @@ export default class FormContainer extends Component {
     )
   }
 }
+
+const mapDispatchToProps = { fetchHolidays };
+const mapStateToProps = () => ({});
+
+export const component = FormContainer;
+export default connect(mapStateToProps, mapDispatchToProps)(FormContainer)
