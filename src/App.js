@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CalendarContainer from './containers/CalendarContainer';
+import FormContainer from './containers/FormContainer';
 import './App.css';
 
 class App extends Component {
@@ -8,6 +9,7 @@ class App extends Component {
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-md-offset-2">
+            <FormContainer />
             <CalendarContainer />
           </div>
         </div>
