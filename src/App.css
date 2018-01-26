@@ -1,0 +1,37 @@
+body {
+  padding-top: 50px;
+  background-color: #DFE3EA;
+}
+
+.Calendar {
+  margin-top: 20px;
+  width: 100%;
+}
+
+th {
+  background-color: white;
+}
+
+.Calendar .CalendarHeader th,
+.Calendar .Month th,
+.Calendar .CalendarHeader,
+.Calendar .Month td {
+  text-align: center;
+}
+
+.Day {
+  background-color: #A3FB66;
+}
+
+.Day.Day-invalid {
+  background-color: gray;
+  color: transparent;
+}
+
+.Day.Day-holiday {
+  background-color: #E69022;
+}
+
+.Day.Day-weekend {
+  background-color: #FCEE6D;
+}
