@@ -29,7 +29,7 @@ class FormContainer extends Component {
           <div className="panel-body">
             <form>
               <div className="form-group">
-                <label htmlFor="startDate">Start Date</label>
+                <label htmlFor="startDate">Start Date (format Year/Month/Day)</label>
                 <input type="text" onChange={e => this.setState({startDate: e.target.value })} className="form-control" id="startDate" />
               </div>
               <div className="form-group">

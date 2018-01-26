@@ -20,7 +20,7 @@ export default class Month extends PureComponent {
   }
 
   isDateValid(date) {
-    return this.startDate.isSame(moment(date), 'month') && moment(date).isSameOrBefore(this.endDate, 'day');
+    return (moment(date).isSameOrBefore(this.endDate, 'day')) && moment(date).isSameOrAfter(this.startDate, 'day');
   }
 
   isDateHoliday(date) {
